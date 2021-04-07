@@ -1,4 +1,40 @@
-*
+// plugin
+@use '~normalize.css/normalize'
+
+// screen
+$desktop-sm: '(max-width: 1279px)'
+$tablet: '(max-width: 1024px)'
+$mobile: '(max-width: 770px)'
+
+//mixins
+=screen($size)
+  @if $size == $tablet
+    @media only screen and #{$tablet}
+      @content
+  @else if $size == $mobile
+    @media only screen and #{$mobile}
+      @content
+  @else
+    @media only screen and #{$size}
+      @content
+
+//style
+body
+  height: 100%
+  width: 100%
+  font-family: 'Montserrat', sans-serif
+  color: #131414
+  background-color: #FFFFFF
+
+.container
+  position: relative
   box-sizing: border-box
-  margin: 0
-  padding: 0
+  width: 100%
+  max-width: 1440px
+  margin: 0 auto
+  padding: 0 100px
+  +screen($tablet)
+    padding: 0 20px
+
+
+
