@@ -1,14 +1,3 @@
-const sprites = require("postcss-sprites");
-const spriteOptions = {
-  stylesheetPath: "./src/styles",
-  spritePath: "./src/images/sprites",
-  filterBy: file => {
-    console.log("Background ", file);
-    return new Promise((resolve, reject) => {
-      resolve();
-    });
-  }
-};
 
 const fontMagician = require("postcss-font-magician")({
   variants: {
@@ -21,5 +10,5 @@ const fontMagician = require("postcss-font-magician")({
 });
 
 module.exports = {
-  plugins: [require("autoprefixer"), sprites(spriteOptions), fontMagician]
+  plugins: [require("autoprefixer"), fontMagician]
 };
