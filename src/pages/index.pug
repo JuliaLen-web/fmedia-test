@@ -12,6 +12,29 @@ html(lang='en')
     .product
       .container
         .product__images
+          .swiper-container.gallery-top
+            .swiper-wrapper
+              .swiper-slide
+                img(src='../images/product-image-1.png')
+              .swiper-slide
+                img(src='../images/product-image-2.png')
+              .swiper-slide
+                img(src='../images/product-image-3.png')
+              .swiper-slide
+                img(src='../images/product-image-3.png')
+          .product__images-mini
+            .swiper-container.gallery-thumbs
+              .swiper-wrapper
+                .swiper-slide
+                  img(src='../images/product-image-1.png')
+                .swiper-slide
+                  img(src='../images/product-image-2-preview.png')
+                .swiper-slide
+                  img(src='../images/product-image-3.png')
+                .swiper-slide
+                  img(src='../images/product-image-3.png')
+            .swiper-button-next.swiper-button-white
+            .swiper-button-prev.swiper-button-white
         .product__about
           h1 BrightSmile Veneers
           span Вы будете улыбаться ярко!
@@ -30,29 +53,32 @@ html(lang='en')
             span Купить сейчас
             .product__about-price
     .instruction
-      h2 Инструкция по установке
-        b BrightSmile
+      h2 Инструкция по установке #[b BrightSmile]
       .instruction__content
         .instruction__image
         .instruction__list
           ul
             li.instruction__list-item
               .instruction__list-item-img
+                img(src='../images/instruction-image-1.png')
               .instruction__list-item-text
                 b 1
                 span Поместите виниры в емкость с теплой водой
             li.instruction__list-item
               .instruction__list-item-img
+                img(src='../images/instruction-image-2.png')
               .instruction__list-item-text
                 b 2
                 span Поместите виниры в емкость с теплой водой
             li.instruction__list-item
               .instruction__list-item-img
+                img(src='../images/instruction-image-3.png')
               .instruction__list-item-text
                 b 3
                 span Поместите виниры в емкость с теплой водой
             li.instruction__list-item
               .instruction__list-item-img
+                img(src='../images/instruction-image-4.png')
               .instruction__list-item-text
                 b 4
                 span Поместите виниры в емкость с теплой водой
