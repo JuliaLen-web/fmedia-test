@@ -58,9 +58,14 @@ body
   text-align: center
   transition: .3s
   cursor: pointer
+  +screen($mobile)
+    font-weight: bold
+    height: auto
 
   &:hover
     background: lighten(#FF6B00, 10%)
+    +screen($mobile)
+      background: #FF6B00
 
   &_disabled,
   &_disabled:hover
@@ -145,7 +150,7 @@ body
         overflow: hidden
         +screen($tablet)
           max-width: 612px
-          margin-top: -1px
+          margin-top: -2px
 
         .swiper-slide
           max-height: 400px
@@ -199,6 +204,8 @@ body
     &-review
       display: flex
       align-items: center
+      +screen($mobile)
+        flex-wrap: wrap
 
       &-item
         position: relative
@@ -249,11 +256,17 @@ body
     &-buy
       display: flex
       flex-wrap: wrap
+      +screen($mobile)
+        justify-content: space-between
+        align-items: baseline
+        margin-bottom: 35px
 
       &-price,
       &-time,
       &-count
         width: 50%
+        +screen($mobile)
+          width: auto
 
       &-price
         display: flex
@@ -261,6 +274,9 @@ body
         justify-content: space-between
         position: relative
         margin: 15px 0
+        +screen($mobile)
+          width: 100%
+          justify-content: flex-start
 
         &-new
           font-weight: bold
@@ -269,6 +285,10 @@ body
           text-transform: uppercase
           order: 3
           width: 100%
+          +screen($mobile)
+            order: 0
+            width: auto
+            margin-right: 20px
 
         &-old
           display: flex
@@ -279,6 +299,9 @@ body
           text-transform: uppercase
           color: #727272
           text-decoration: line-through #FF0000
+          +screen($mobile)
+            margin-right: 22px
+            margin-bottom: 10px
 
         &-sale
           width: 48px
@@ -300,6 +323,8 @@ body
         display: flex
         flex-direction: column
         align-items: flex-end
+        +screen($mobile)
+          order: 3
 
         .product__about-item
           img
@@ -340,11 +365,16 @@ body
         display: flex
         align-items: center
         margin-bottom: 35px
+        +screen($mobile)
+          flex-direction: column
+          align-items: flex-start
+          margin-bottom: 0
 
         &-block
           display: flex
           align-items: center
           justify-content: space-between
+          min-width: 100px
           width: 115px
           height: 37px
           margin-left: 20px
@@ -352,6 +382,9 @@ body
           overflow: hidden
           border: 1px solid #DCDCDC
           color: #565860
+          +screen($mobile)
+            margin-top: 20px
+            margin-left: 0
 
         &-minus,
         &-plus
@@ -367,6 +400,7 @@ body
           font-weight: 500
           font-size: 18px
           line-height: 22px
+          min-width: 5px
 
     .button
       +screen($mobile)
@@ -375,8 +409,19 @@ body
 
       .product__about-buy-price
         display: none
+        width: auto
+        margin-left: 10px
         +screen($mobile)
           display: flex
+
+        &-new
+          font-size: 33px
+          line-height: 40px
+          margin-bottom: 7px
+
+        &-old
+          color: #4A1414
+          text-decoration-color: #4A1414
 
         &-sale
           display: none
@@ -428,7 +473,7 @@ body
       background: #FFFFFF
       border-radius: 241px
       +screen($tablet)
-        border-radius: 0
+        border-radius: 241px 0 0 241px
         padding: 10px 250px 10px 100px
       +screen($mobile)
         padding: 10px 30px 10px 100px
