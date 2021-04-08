@@ -30,7 +30,6 @@ window.addEventListener('load', () => {
     preloadImages: true,
     direction: 'horizontal',
     lazy: true,
-    loop: true,
     slidesPerView: '1',
     thumbs: {
       swiper: galleryThumbs

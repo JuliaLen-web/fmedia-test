@@ -38,24 +38,58 @@ html(lang='en')
         .product__about
           h1 BrightSmile Veneers
           span Вы будете улыбаться ярко!
-          p.product__about-description Удобные и практичные виниры по отличной цене! Оформите заказ прямо сейчас и оплатите товар при получении.
+          .product__about-description
+            p Удобные и практичные виниры по отличной цене!
+            p Оформите заказ прямо сейчас и оплатите товар при получении.
           .product__about-review
-            .product__about-review-stars
-            .product__about-review-comment
-            .product__about-review-orders
+            .product__about-review-stars.product__about-review-item
+              img(src='../images/svg/star.svg')
+              img(src='../images/svg/star.svg')
+              span 2,7
+            span.product__about-review-item 170 отзывов
+            span.product__about-review-item 302 заказа(ов)
           .product__about-item
+            img(src='../images/svg/box.svg')
+            span Бесплатная доставка
           hr.product__about-line
           .product__about-buy
-            .product__about-price
+            .product__about-buy-price
+              .product__about-buy-price-new 49,00 €
+              .product__about-buy-price-old 52 €
+              .product__about-buy-price-sale -5%
             .product__about-buy-time
+              .product__about-item
+                img(src='../images/svg/time.svg')
+                span Скидка заканчивается через:
+              .product__about-buy-time-counter
+                .product__about-buy-time-item
+                  b 00
+                  span часы
+                b :
+                .product__about-buy-time-item
+                  b 55
+                  span минуты
+                b :
+                .product__about-buy-time-item
+                  b 11
+                  span секунды
             .product__about-buy-count
+              span Количество:
+              .product__about-buy-count-block
+                .product__about-buy-count-minus -
+                span 1
+                .product__about-buy-count-plus +
           a.button(href="javascript:")
             span Купить сейчас
-            .product__about-price
+            .product__about-buy-price
+              .product__about-buy-price-new 49,00 €
+              .product__about-buy-price-old 52 €
+              .product__about-buy-price-sale -5%
     .instruction
       h2 Инструкция по установке #[b BrightSmile]
       .instruction__content
         .instruction__image
+          img(src='../images/instruction-bg.png')
         .instruction__list
           ul
             li.instruction__list-item
@@ -63,23 +97,24 @@ html(lang='en')
                 img(src='../images/instruction-image-1.png')
               .instruction__list-item-text
                 b 1
-                span Поместите виниры в емкость с теплой водой
+                span Поместите виниры в емкость с&nbsp;теплой&nbsp;водой
             li.instruction__list-item
               .instruction__list-item-img
                 img(src='../images/instruction-image-2.png')
               .instruction__list-item-text
                 b 2
-                span Поместите виниры в емкость с теплой водой
+                span Через 10 минут достаньте их и&nbsp;обсушите салфеткой
             li.instruction__list-item
               .instruction__list-item-img
                 img(src='../images/instruction-image-3.png')
               .instruction__list-item-text
                 b 3
-                span Поместите виниры в емкость с теплой водой
+                span Установите виниры на зубы, плотно придавливая руками
             li.instruction__list-item
               .instruction__list-item-img
                 img(src='../images/instruction-image-4.png')
               .instruction__list-item-text
                 b 4
-                span Поместите виниры в емкость с теплой водой
+                span Очищайте виниры 2&nbsp;раза в&nbsp;день обычной зубной пастой
+
 
