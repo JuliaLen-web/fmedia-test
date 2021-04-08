@@ -3,7 +3,6 @@ import "./styles/main.sass";
 import Swiper, {Mousewheel, Navigation, Thumbs, Pagination} from 'swiper'
 Swiper.use([Mousewheel, Navigation, Thumbs, Pagination])
 
-
 window.addEventListener('load', () => {
   const galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 12,
